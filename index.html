@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Kumar Meena - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- BACK TO TOP ARROW -->
+    <a class="smoothScroll" href="#welcome"><img id="btt" class="img-responsive" style="background-color: #26816E ;" src="upA.png"></a>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a class="smoothScroll" href="#welcome">Home</a></li>
+            <li><a class="smoothScroll" href="#about">About</a></li>
+            <li><a class="smoothScroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothScroll" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <!-- WELCOME -->
+        <div id="welcome">
+            <h1>Yash Kumar Meena</h1>
+            <h3><b>Web Developer</b></h3>
+            <a class="smoothScroll" href="#about"><img id="press" style="background-color: #26816E ;" src="dwnA.png"></a>
+        </div>
+    </center>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <h1>About Me</h1>
+        <center>
+            <div id="self">
+                <img class="img-responsive" src="Yash.jpg" alt="Yash Kumar Meena">
+            </div>
+        </center>
+        <br>
+        <p style="margin-top: 0%;">Hello! I’m Yash Kumar Meena, a dedicated and passionate web developer currently pursuing my Bachelor of Technology (B.Tech) in Computer Science at the Indian Institute of Information Technology, Nagpur (IIITN). With a strong foundation in computer science principles and hands-on experience in web development and comptative programing, I am eager to leverage my skills to build innovative and user-friendly web applications.<br><br> When I’m not coding, I enjoy drawing, playing video games, and drinking a nice cup of tea.<br><br> Scroll down to see some examples of my work!<br><br>Want to work together? I’d love to hear from you!</p>
+        <br><br>
+        <span style="display: flex;">
+        <span id="email" style="display: flex;max-width:400px;gap:10px">
+            <div>
+            <img src="mail.webp"></div>yashamanmeena2@gmail.com
+        </span>
+        <span id="portScroll">
+            <a class="smoothScroll" href="#portfolio"><img src="http://www.meegankent.com/images/portfolio-icon2.png"> View My Portfolio</a>
+        </span>
+    </span>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <h1>Portfolio</h1>
+        <h3>Here you'll find some projects I've worked on! Click on a project to see a demo of it.</h3>
+        <br>
+        <center>
+            <div id="port" class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <p style="font-size: 30px;">
+                                Study-Bites Landing Page
+                            </p><a target="_blank" href="https://raw.githack.com/ItsYash1421/Study-Bites-Landing-Page/main/StudyBites.html"><img class="img-responsive thumbnail" src="STB.png" alt="Project 1"></a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="font-size: 30px;">Working StopWatch</p>
+                            <a target="_blank" href="https://raw.githack.com/ItsYash1421/StopWatch/main/index.html"><img class="img-responsive thumbnail" src="ST.png" alt="Project 2"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="font-size: 30px;">Weather Forcasting WebPage</p>
+                            <a target="_blank" href="https://raw.githack.com/ItsYash1421/Weather-Forcasting-WebPage/main/index.html"><img class="img-responsive thumbnail" src="WT.png" alt="Project 3"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="font-size: 30px;">Tic-Tac_Toe Game</p>
+                            <a target="_blank" href="https://raw.githack.com/ItsYash1421/Tic-Tac-Toe-Game/main/home.html"><img class="img-responsive thumbnail" src="tictac.jpeg" alt="Project 4"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+    </div>
+
+    <div id="contact">
+        <h1 style="padding-top: 0x;margin-top:0%">Contact</h1>
+        <center>
+            <div class="contact-details">
+                <p>Phone: 8290547697 <br style="padding-top: 5px;">
+               Email: yashamanmeena2@gmail.com <br>
+                Address: Kherli, Alwar, Rajasthan</p>
+            </div>
+        </center>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.smoothScroll').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1300);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
