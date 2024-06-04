@@ -163,6 +163,8 @@ nav ul li a:hover {
 #self {
     text-align: center;
     padding: 5%;
+    margin-right: 0px;
+    padding-left: 380px;
 }
 
 #self img {
@@ -220,4 +222,152 @@ nav ul li a:hover {
     font-size: 10pt;
     margin: 10px 0px ;
     padding-bottom: 100px;
+}
+
+@media only screen 
+and (max-device-width: 1024px)
+{
+    body {
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #5BC2B4;
+    }
+    
+    /* BACK TO TOP BUTTON */
+    #btt {
+        margin-bottom: 20px;
+        margin-right: 10px;
+        bottom: 0;
+        right: 0;
+        opacity: 0.8;
+        width: 50px;
+        transition: margin-bottom 0.6s, opacity 0.6s;
+    }
+    
+    #btt:hover {
+        margin-bottom: 25px;
+        opacity: 1;
+        transition: margin-bottom 0.6s, opacity 0.6s;
+    }
+
+    #welcome {
+        font-family: 'Amatic SC', cursive;
+        color: white;
+        background: url("back.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 371px;
+        padding: 5%;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* About */
+    
+    #email {
+        background-color: #26816E;
+        padding: 2%;
+        padding-top: 40px;
+        border-radius: 20px;
+        transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    }
+    
+    #portScroll {
+        background-color: #26816E;
+        padding: 2%;
+        border-radius: 20px;
+        margin-left: 2%;
+        transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    }
+    
+    #about #portScroll img {
+        text-align: left;
+        margin-right: 5px;
+        width: 18px;
+    }
+    
+    #portScroll a,
+    #portScroll a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #email:hover,
+    #portScroll:hover {
+        box-shadow: 0px 10px 30px #406D91;
+        color: #26816E;
+        background-color: black;
+        transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+    }
+    .spann
+    {
+        display: grid;
+    }
+
+    #port img {
+        width: 380px;
+        opacity: 1;
+        box-shadow: 0px 10px 50px #406D91;
+        transition: opacity 0.5s, box-shadow 0.5s;
+    }
+    
+    .img-responsive
+    {
+        background-color: white;
+        color: white;
+        border-radius: 8px;
+    }
+    #contact {
+        background-color: #26816E;
+        color: white;
+        padding: 5%;
+        width: 372px;
+        max-height: auto;
+        height: 300px;
+        padding-top: 5px; /* Offset for fixed nav */
+         text-align: center;
+    }
+    .contact-details p{
+        font-size: 10pt;
+        margin: 10px 0px ;
+        padding-bottom: 30px;
+    }
 }
