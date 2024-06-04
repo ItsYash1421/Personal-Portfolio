@@ -4,6 +4,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    height: auto;
 }
 
 nav {
@@ -239,7 +240,7 @@ and (max-device-width: 1024px)
     nav {
         position: fixed;
         top: 0;
-        width: 400px;
+        width: 420px;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 10px 0;
         z-index: 1000;
@@ -270,6 +271,7 @@ and (max-device-width: 1024px)
     
     /* BACK TO TOP BUTTON */
     #btt {
+        display: none;
         margin-bottom: 20px;
         margin-right: 10px;
         bottom: 0;
@@ -356,18 +358,22 @@ and (max-device-width: 1024px)
         border-radius: 8px;
     }
     #contact {
+        font-size: 9pt;
         background-color: #26816E;
         color: white;
-        padding: 5%;
         width: 372px;
-        max-height: auto;
-        height: 300px;
-        padding-top: 5px; /* Offset for fixed nav */
+        height: 900px;
+        padding-top: 0px; /* Offset for fixed nav */
          text-align: center;
     }
     .contact-details p{
-        font-size: 10pt;
-        margin: 10px 0px ;
-        padding-bottom: 30px;
+        font-size: 8pt;
+        margin: 0px 0px ;
+        padding-bottom: 10px;
+        
+    }
+    .contact-details
+    {
+        margin-top: 2px;
     }
 }
