@@ -357,12 +357,11 @@ and (max-device-width: 1024px)
         color: white;
         border-radius: 8px;
     }
-    #contact {
+     #contact {
         font-size: 9pt;
         background-color: #26816E;
         color: white;
-        width: 372px;
-        height: 900px;
+        width: 97%;
         padding-top: 0px; /* Offset for fixed nav */
          text-align: center;
     }
